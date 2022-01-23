@@ -1,0 +1,195 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../font/icomoon.ttf');
+}
+
+@keyframes top {
+  0% { padding: 0 0; }
+  100% { padding: 12px 0; }
+}
+
+@keyframes center {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+body {
+  background: url(../img/5b8abc339a62b.jpg) no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.link:hover {
+  opacity: 0.7;
+}
+
+.link:active {
+  opacity: 0.3;
+}
+
+.top {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  color: black;
+  /*color: white;*/
+  z-index: 1;
+}
+
+.top-content {
+  width: 78%;
+  margin: 0 auto;
+  padding: 12px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  animation: top 0.6s;
+}
+
+.top-title {
+  font-size: 20px;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+}
+
+.topp{
+  display: flex;
+  padding: 12px 0;
+  align-items: center;
+  animation: top 0.6s;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.topp a{
+  color: black;
+  /*color: white;*/
+}
+
+.top-link {
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.center-filter {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /*background: linear-gradient(to right, #4a4cd6, #4bddf7) repeat-y;*/
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.center-content {
+  width: 100%;
+  color: black;
+  /*color: white;*/
+  padding-top: 8%;
+  animation: center 2s;
+}
+
+.center-content1 {
+  width: 65%;
+  color: black;
+  /*color: white;*/
+  padding-top: 8%;
+  animation: center 2s;
+}
+
+.title {
+  font-size: 60px;
+  margin-left: 10%;
+}
+
+.words {
+  max-width: 555px;
+  margin-top: 10px;
+  line-height: 1.5em;
+  float: right;
+  font-size: 30px;
+}
+
+.top-link>a{
+  color: black;
+  /*color: white;*/
+}
+
+.text{
+  margin: 100px;
+}
+
+.text a{
+  color: black;
+  /*color: white;*/
+  font-size: 20px
+}
+
+.text li{
+  margin: 20px;
+}
+
+.text>ul{
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.imgs,.texts{
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.texts{
+  margin-top: 100px;
+}
+
+.texts>p{
+  line-height: 35px;
+  font-size: 20px;
+}
+
+.imgs{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.horizon{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.center{
+  width: 100%;
+}
